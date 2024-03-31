@@ -40,9 +40,9 @@ Tipagem forte: Não é automaticamente tratada como outro tipo sem uma conversã
 TypeError, pois 2 é float e '2' é str.
 '''
 
-idade: int = input("Digite sua idade: ")
-print(idade)
-print(type(idade))
+# idade: int = input("Digite sua idade: ")
+# print(idade)
+# print(type(idade))
 
 '''
 Várias pessoas não curtem o Type Hint justamente pois ele não executa nada.
@@ -53,8 +53,77 @@ Ele ajuda a se comunicar melhor!
 Não ajuda nada em execução e sim na comunicação.
 '''
 
-idade = int(input("Digite sua idade: "))
-if isinstance(idade, int):
-    print(idade)
-else:
-    Print('Digite uma idade válida!')
+# idade = int(input("Digite sua idade: "))
+# if isinstance(idade, int):
+#     print(idade)
+# else:
+#     print('Digite uma idade válida!')
+    
+'''
+Tipos Complexos
+
+Um conjunto de tipos primitivos (str, int, bool, float) ou de outros tipos complexos
+'''
+
+# produto: str = "sapato"
+# produto_2: str = "camiseta"
+# produto_3: str = "videogame"
+
+# produtos: list = []
+
+# produtos.append(produto)
+# produtos.append(produto_2)
+# produtos.append(produto_2)
+
+# print(produtos)
+
+'''
+Dicionário: Estrutura de chaves e valores
+
+'''
+
+# produto_01: dict = {
+#     'nome': 'Sapato',
+#     'quantidade': 39,
+#     'preco': 10.38,
+#     'disponibilidade': True,
+# }
+
+# produto_02: dict = {
+#     'nome': 'Televisao',
+#     'quantidade': 10,
+#     'preco': 70.38,
+#     'disponibilidade': False,
+# }
+
+# carrinho: list = []
+
+# carrinho.append(produto_01)
+# carrinho.append(produto_02)
+
+# print(carrinho)
+
+# json e dicionário são praticamente a mesma coisa, possui a mesma estrutura de chave valor
+
+# para converter o carrinho para um json
+
+# import json 
+# carrinho_json = json.dumps(carrinho)
+# print(carrinho_json)
+
+# compare a estrutura entre o carrinho e o carrinho json (São parecidos)
+
+# Crie um dicionário para armazenar informações de um livro,
+# incluindo título, autor e ano de publicação. Imprima cada informação.
+
+from typing import Dict, Any
+
+livro: Dict[str, Any] = {
+    'Titulo': 'Game of Thrones',
+    'Autor': 'Estagiário',
+    'Ano': 2005
+}
+
+lista_de_elementos: list = livro.items()
+for elemento in lista_de_elementos:
+    print(elemento)
