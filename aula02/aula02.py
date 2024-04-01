@@ -133,6 +133,28 @@ else:
 #     print('O valor digitado é um inteiro')
 # else:
 #     print('O valor digitado não é um inteiro')
+    
+    
+# # Inicia um loop infinito que só quebra quando um valor válido é inserido
+# while True:
+#     entrada_usuario = input("Digite o valor do seu salário (entre 1400 e 100000): ")
+    
+#     # Tentar converter a entrada para float
+#     try:
+#         salario = float(entrada_usuario)
+        
+#         # Verifica se o salário está dentro do intervalo e não é zero
+#         if 1400 <= salario <= 100000:
+#             print("Valor válido. Obrigado!")
+#             break  # Sai do loop
+#         else:
+#             print("Valor fora do intervalo permitido. Por favor, tente novamente.")
+    
+#     except ValueError:  # Captura o erro se a conversão para float falhar
+#         print("Por favor, insira um valor numérico válido, sem espaços ou texto.")
+
+# # Continua com a lógica do programa usando o valor de 'salario'
+
 
 
 '''
