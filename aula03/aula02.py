@@ -5,11 +5,11 @@ Sempre em atividades atividades de fluxo de dados precisamos definir uma rota pa
 O airflow, por exemplo, é uma ferramenta de orquestração. 
 '''
 
-print("esse é o primeiro comando")
+# print("esse é o primeiro comando")
 
-print("esse é o segundo comando")
+# print("esse é o segundo comando")
 
-print("esse é o terceiro comando")
+# print("esse é o terceiro comando")
 
 '''
 Ao executar este arquivo ele executará os scripts acima em uma forma sequencia de cima para baixo.
@@ -57,11 +57,19 @@ DEBUGAR é ver linha a linha seu projeto executando.
 O For itera sobre os itens de qualquer seqência.
 '''
 
-for i in range(1,5):
-    print(i)
+# for i in range(1,5):
+#     print(i)
     
-for i in 'felipe':
-    print(i)
+# for i in 'felipe':
+#     print(i)
+    
+# Diretamente em uma chamada de função
+print(*[x for x in 'felipe'], sep='\n')
+
+lista = list(x for x in 'felipe')
+print(lista)
+
+
     
     
 '''
