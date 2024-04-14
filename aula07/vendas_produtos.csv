@@ -1,0 +1,4 @@
+id_pedido,id_produto,descricao_produto,categoria_produto,quantidade,preco_total,status_entrega
+7398,36,Produto 18,Vestuário,4,774.42,Em transporte
+6706,7,Produto 10,Livros,6,1171.32,Pendente
+2752,1,Produto 5,Esportes,1,265.41,Entregue
