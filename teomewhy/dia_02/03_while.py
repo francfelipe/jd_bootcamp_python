@@ -1,44 +1,38 @@
 # %%
-i = 1
-while i <= 10:
-    print("FODASE: ", i)
-    i += 1
+
+qtde = int(input("Quantos fodases você quer? "))
+
+count = 1
+while count <= qtde:
+    print("Fodase!")
+    count += 1      # count = count + 1
 
 # %%
-
-i = 1
-while True:
-    print(i)
-    i += 1
-    if i > 10:
-        print("Parando o laço WHILE")
-        break
-
-# %%
-
-i = 1
+    
 while True:
     
-    if i % 2 == 0:
-        print("par")
+    senha = input("Entre com a senha: ")
+    
+    if senha == "fodase":
+        break
+    
+    elif senha == "teozinho":
+        print("quase...")
         continue
 
-    if i % 3 == 0:
-        pass    
-
-    if i > 10:
-        print("Parando o laço WHILE")
-        break
-
-    i += 1
+    print("fodase")
+    print("Mais um foda-se")
+    print("Mais um foda-se")
 
 
+print("Saí! Porra!")
 
 # %%
 
-i = int(input("Entre com o valor mínimo para iteração: "))
-j = int(input("Entre com o valor máximo para iteração: "))
+contador = 1
+while contador <= 15:
 
-while i <= j:
-    print(i, end=" ")
-    i += 1
+    if contador % 2 == 0:
+        print(contador)
+
+    contador += 1
